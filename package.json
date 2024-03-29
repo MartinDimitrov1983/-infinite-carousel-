@@ -1,5 +1,5 @@
 {
-  "name": "infinte-carousel",
+  "name": "infinite-carousel",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -27,7 +27,8 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "prettier" 
     ]
   },
   "browserslist": {
@@ -43,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "eslint-config-prettier": "^9.1.0",
     "prettier": "^3.2.5"
   }
 }
