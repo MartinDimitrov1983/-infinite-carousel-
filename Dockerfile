@@ -1,6 +1,6 @@
 FROM node:18-alpine
 
-WORKDIR /crypto-app
+WORKDIR /infinite-carousel
 
 COPY package*.json ./
 

@@ -1,0 +1,6 @@
+.imageWrapper {
+    display: flex;
+    height: 80%;
+    transition: transform 0.3s ease;
+  }
+  
