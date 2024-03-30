@@ -1,5 +1,6 @@
 import React from 'react';
 import { Image } from '../';
+import { ALT } from '../../utils';
 import styles from './index.module.css';
 
 interface ImageSliderProps {
@@ -14,9 +15,9 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
   <div className={styles.imageWrapper}>
     {images.map((image, index) => (
       <Image
-        key={index}
+        key={`${image}-${index}`}
         src={image}
-        alt={`image-${index}`}
+        alt={`${ALT}-${index}`}
         isActive={index === currentImageIndex}
       />
     ))}

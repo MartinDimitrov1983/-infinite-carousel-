@@ -15,7 +15,7 @@ const Carousel: React.FC<CarouselProps> = ({ images, height }) => {
     <div
       ref={containerRef}
       className={styles.carouselContainer}
-      style={{ height: `${height}px` }}
+      style={{ height: `${height}vh` }}
     >
       <ImageSlider images={images} currentImageIndex={currentIndex} />
     </div>

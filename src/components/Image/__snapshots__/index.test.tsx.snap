@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Snapshot Input 1`] = `
+exports[`Snapshot Image 1`] = `
 <DocumentFragment>
   <img
-    alt=""
+    alt="Test"
     class="img"
-    src=""
+    src="https://i.pinimg.com/736x/5b/99/b3/5b99b3974c2d889fc1fb703b473394de.jpg"
     style="display: inline-block;"
   />
 </DocumentFragment>

@@ -3,14 +3,14 @@ import { render } from '@testing-library/react';
 
 import Carousel from './index';
 
-test('Snapshot Input', () => {
+test('Snapshot Carousel', () => {
   const { asFragment } = render(
     <Carousel
       images={[
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJgbhoPzhSGlHth9jG-UnNQm3TKFFmGVvrXg&usqp=CAU',
-        'https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8fDA%3D&w=1000&q=80',
+        'https://media.istockphoto.com/id/1173544006/photo/winding-road.jpg?s=612x612&w=0&k=20&c=_VMEnB08arEsLnbES0knQUWHPrCD8TQFCy99JC4RZIQ=',
+        'https://i.pinimg.com/736x/5b/99/b3/5b99b3974c2d889fc1fb703b473394de.jpg',
       ]}
-      height={1000}
+      height={50}
     />,
   );
   expect(asFragment()).toMatchSnapshot();

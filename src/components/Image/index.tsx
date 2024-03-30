@@ -1,4 +1,5 @@
 import React from 'react';
+import { NONE, INLINE_BLOCK } from '../../utils';
 import styles from './index.module.css';
 
 interface ImageProps {
@@ -12,7 +13,7 @@ const Image: React.FC<ImageProps> = ({ src, alt, isActive }) => (
     src={src}
     alt={alt}
     style={{
-      display: `${isActive ? 'inline-block' : 'none'}`,
+      display: `${isActive ? INLINE_BLOCK : NONE}`,
     }}
   />
 );
