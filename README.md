@@ -1,4 +1,8 @@
 
+## Functionalities of slider
+
+Slider provide two options for navigation - horizontal and vertical. To test it just scroll left/right or up/down.  
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -20,7 +24,3 @@ This will build image
 ### `docker run -dp 8000:3000 --name react-example-container react-example-image:latest`
 
 This will run doscker and app will be available on [http://localhost:8000]
-
-## Functionalities of slider
-
-Slider provide two options for navigation - horizontal and vertical. To test it just scroll left/right or up/down.  
