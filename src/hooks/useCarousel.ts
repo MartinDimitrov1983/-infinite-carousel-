@@ -1,5 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
-import { TIMEOUT, OPACITY, RESTORE_OPACITY } from '../utils';
+import {
+  TIMEOUT,
+  STOP_SCROLL_TIMEOUT,
+  OPACITY,
+  RESTORE_OPACITY,
+} from '../utils';
 
 export interface CarouselHookResult {
   currentIndex: number;
@@ -22,6 +27,7 @@ export const useCarousel = (images: string[]): CarouselHookResult => {
             window.clearTimeout(scrollTimeoutRef.current);
           }
           const { deltaY, deltaX } = event;
+
           isProcessingScroll.current = true;
           container.style.opacity = OPACITY;
 
@@ -35,7 +41,9 @@ export const useCarousel = (images: string[]): CarouselHookResult => {
               }
               return prevIndex;
             });
-            isProcessingScroll.current = false;
+            setTimeout(() => {
+              isProcessingScroll.current = false;
+            }, STOP_SCROLL_TIMEOUT);
             container.style.opacity = RESTORE_OPACITY;
           }, TIMEOUT);
         }
