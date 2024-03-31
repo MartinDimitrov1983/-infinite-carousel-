@@ -1,7 +1,7 @@
 
-## Functionalities of slider
+## Functionalities of carousel
 
-Slider provide two options for navigation - horizontal and vertical. To test it just scroll left/right or up/down.  
+Carousel provide two options for navigation - horizontal and vertical scroll. To test it just scroll left/right or up/down.  
 
 ## Available Scripts
 
