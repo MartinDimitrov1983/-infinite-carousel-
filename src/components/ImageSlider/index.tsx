@@ -13,14 +13,20 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
   currentImageIndex,
 }) => (
   <div className={styles.imageWrapper}>
-    {images.map((image, index) => (
+    {/* {images.map((image, index) => (
       <Image
         key={`${image}-${index}`}
         src={image}
         alt={`${ALT}-${index}`}
         isActive={index === currentImageIndex}
       />
-    ))}
+    ))} */}
+    <Image
+        //key={`${image}-${index}`}
+        src={images[currentImageIndex]}
+        alt={`${ALT}-${currentImageIndex}`}
+        isActive={true}
+      />
   </div>
 );
 
