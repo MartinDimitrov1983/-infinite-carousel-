@@ -6,16 +6,9 @@ exports[`Snapshot ImageSlider 1`] = `
     class="imageWrapper"
   >
     <img
-      alt="This is image-0"
+      alt="This is image-2"
       class="img"
-      src="https://media.istockphoto.com/id/1173544006/photo/winding-road.jpg?s=612x612&w=0&k=20&c=_VMEnB08arEsLnbES0knQUWHPrCD8TQFCy99JC4RZIQ="
-      style="display: none;"
-    />
-    <img
-      alt="This is image-1"
-      class="img"
-      src="https://i.pinimg.com/736x/5b/99/b3/5b99b3974c2d889fc1fb703b473394de.jpg"
-      style="display: none;"
+      style="display: inline-block;"
     />
   </div>
 </DocumentFragment>
